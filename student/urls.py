@@ -8,5 +8,8 @@ urlpatterns = [
     path('get_by_id/<int:req_id>/', views.get_student_by_id),
     path('get_by_name/<str:name>/', views.get_student_by_name),
     path('filter_by_grade/<int:grade>/', views.student_list_filter),
+    path('save/', views.create_student),
+    path('update/<int:id>/', views.update_student),
+    path('delete/<int:del_id>/', views.delete_student),
 
 ]
